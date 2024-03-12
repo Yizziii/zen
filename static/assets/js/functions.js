@@ -19,7 +19,7 @@ if (blankerCheck === 'enabled') {
   if (!inFrame && !navigator.userAgent.includes("Firefox")) {
       const popup = open("about:blank", "_blank")
       if (!popup || popup.closed) {
-          alert("Please allow popups and redirects for about:blank cloak to work.")
+          alert("Hey dude! looks like POP-UP's arent ON/ Allowed. Please turn on Pop-ups to use the cloaker! :).")
       } else {
           const doc = popup.document
           const iframe = doc.createElement("iframe")
@@ -37,7 +37,7 @@ if (blankerCheck === 'enabled') {
           style.width = style.height = "100%"
           doc.head.appendChild(link);
           doc.body.appendChild(iframe)
-          location.replace("https://classroom.google.com")
+          location.replace("https://google.com")
       }
   }
 }
@@ -79,7 +79,7 @@ function toggleSubmenu(event) {
 
 function handleSubmenuClick() {
   // Perform action when submenu option is clicked
-  alert("hi");
+  alert("hey! secret found!! :)");
   hideSubmenu();
 }
 
@@ -106,7 +106,7 @@ function tabCloak() {
   var newIcon = localStorage.getItem('cloakedIcon');
 
   if (newTitle === null || newTitle === '') {
-      alert('No Cloak Detected. Please select one in settings.');
+      alert('Turn on CLOAK to use Zen hub!.');
   } else {
       localStorage.setItem('tabTitle', newTitle);
       localStorage.setItem('tabIcon', newIcon);
@@ -118,7 +118,7 @@ function tabCloak() {
 
 
 function disableTabCloak() {
-  var newTitle = 'Doge | V4';
+  var newTitle = 'Zen hub';
   var newIcon = '/assets/img/doge.jpg';
 
   localStorage.setItem('tabTitle', newTitle);
@@ -254,4 +254,4 @@ if (window.location.protocol === "http:") {
   window.location.href = window.location.href.replace("http:", "https:");
 }
 
-console.log("%cJoin our Discord! discord.gg/unblocking", "color: cyan; font-size: 20px");
+console.log("%Follow me on tiktok! GroundIsBlatant", "color: cyan; font-size: 20px");
