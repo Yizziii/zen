@@ -11,7 +11,7 @@ const bareServer = createBareServer("/bare/");
 app.use(express.json());
 app.use(
   express.urlencoded({
-    extended: true,
+    extended: false,
   })
 );
 
